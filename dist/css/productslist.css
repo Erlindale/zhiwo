@@ -9,7 +9,6 @@ li {
 
 a {
   text-decoration: none;
-  font-size: 12px;
   color: #333; }
 
 body, button, input, select, textarea {
@@ -25,7 +24,7 @@ a, input {
 em, i {
   font-style: normal; }
 
-b, strong, h1, h2, h3, h4, h5, h6 {
+b, strong, h1, h2, h4, h5, h6 {
   font-weight: normal; }
 
 .clear:after {
@@ -36,13 +35,27 @@ b, strong, h1, h2, h3, h4, h5, h6 {
   visibility: hidden; }
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit; }
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit; }
 
 .fl {
   float: left; }
 
 .fr {
   float: right; }
+
+s, strike, del {
+  text-decoration: line-through; }
 
 .wrap {
   background: #f6f6f3;
@@ -416,6 +429,293 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
 
 .fcb_return {
   background: url(http://www.zhiwo.com/static/images/ico/assure2.png) no-repeat 0 -70px; }
+
+/* 商品分类 */
+.container {
+  margin-bottom: 35px; }
+
+.content_wrap {
+  width: 1100px;
+  margin: 0 auto; }
+
+.list-box {
+  width: 1100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #fff; }
+
+.now_pos {
+  height: 40px;
+  background: #fff;
+  border-bottom: 1px #f6f6f3 solid; }
+  .now_pos .list_reset {
+    height: 22px;
+    line-height: 22px;
+    margin-right: 40px;
+    float: right;
+    margin-top: 9px; }
+    .now_pos .list_reset a {
+      font-weight: bold;
+      color: #6c6c6c; }
+
+.now_pos_show {
+  float: left;
+  margin-left: 20px; }
+  .now_pos_show .pos_link {
+    padding: 0 6px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 9px; }
+    .now_pos_show .pos_link a {
+      color: #6c6c6c; }
+
+.now_pos i {
+  font-style: normal;
+  color: #6c6c6c;
+  font-weight: bold;
+  margin: 14px 15px 0; }
+
+.now_pos p, .now_pos i {
+  float: left; }
+
+.lb_menu {
+  padding: 0 20px; }
+
+.lbm_filter_cont {
+  padding: 20px 0 12px;
+  border-bottom: 1px #e3e3e3 dotted; }
+
+.lbm_fctit {
+  color: #00c8ff;
+  font-weight: bold;
+  float: left;
+  margin-right: 18px; }
+
+.lbm_fcbrand {
+  float: left;
+  width: 920px; }
+
+.iscroll_box {
+  margin-top: 8px; }
+
+.iscroll_contbox {
+  position: relative;
+  overflow: hidden; }
+
+.iscroll_cont {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.lbm_fcbrand_name ul {
+  margin-top: -15px;
+  width: 917px;
+  top: 0px; }
+
+.lbm_fcbrand_name li {
+  float: left;
+  width: 90px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 15px; }
+  .lbm_fcbrand_name li a {
+    color: #6c6c6c;
+    display: block;
+    width: 90px;
+    height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+
+.lbm_fcbtn {
+  float: right;
+  margin-right: 11px;
+  color: #6c6c6c;
+  cursor: pointer; }
+  .lbm_fcbtn span {
+    padding-right: 13px;
+    background: url(http://www.zhiwo.com/static/images/ico/pb_subnav_icodown.png) no-repeat right 4px; }
+
+.lbm_fcbrand_num {
+  margin-bottom: 20px;
+  margin-top: -4px; }
+  .lbm_fcbrand_num li {
+    width: 64px;
+    height: 20px;
+    float: left;
+    margin-right: 36px;
+    position: relative; }
+    .lbm_fcbrand_num li a {
+      width: 64px;
+      height: 20px;
+      line-height: 20px;
+      display: block;
+      color: #6c6c6c;
+      font-family: Arial; }
+    .lbm_fcbrand_num li i {
+      position: absolute;
+      border: 4px #00c8ff solid;
+      border-color: #00c8ff transparent transparent transparent;
+      bottom: -8px;
+      left: 50%;
+      margin-left: -4px;
+      display: none; }
+  .lbm_fcbrand_num .lbm_numcurrent a {
+    background: #00c8ff;
+    color: #fff;
+    text-align: center; }
+  .lbm_fcbrand_num .lbm_numcurrent i {
+    display: block; }
+  .lbm_fcbrand_num .lbm_fcbrand_numall a {
+    font-family: 宋体; }
+
+.lbm_fcbrand_name .iscroll_contbox {
+  height: 55px; }
+
+/* 商品列表详情清单 */
+/* 列表导航栏 */
+.pb_subnav {
+  width: 1100px;
+  height: 40px;
+  background: #6c6c6c; }
+
+.pb_subnav_menu {
+  float: left; }
+  .pb_subnav_menu li {
+    float: left; }
+    .pb_subnav_menu li a {
+      display: block;
+      width: 115px;
+      height: 40px;
+      color: #fff;
+      text-align: center;
+      line-height: 40px; }
+      .pb_subnav_menu li a span {
+        padding-right: 12px;
+        background: url(http://www.zhiwo.com/static/images/ico/pb_subnav_icowhite.png) no-repeat right 3px; }
+  .pb_subnav_menu .menu_current, .pb_subnav_menu li:hover a {
+    color: #6c6c6c;
+    background: #fff; }
+  .pb_subnav_menu .menu_current span, .pb_subnav_menu li:hover a span {
+    background: url(http://www.zhiwo.com/static/images/ico/pb_subnav_icogray.png) no-repeat right 3px; }
+  .pb_subnav_menu .menu_price span {
+    background: url(http://www.zhiwo.com/static/images/ico/pb_subnav_icoprice.png) no-repeat right 2px; }
+  .pb_subnav_menu .menu_sel span {
+    padding-right: 18px;
+    background: url(http://www.zhiwo.com/static/images/ico/pb_subnav_iconosel.png) no-repeat right 13px;
+    display: inline-block; }
+
+.pb_subnav_tip {
+  float: right;
+  margin-right: 10px; }
+  .pb_subnav_tip .tip_amount {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 23px 0 0;
+    overflow: hidden; }
+    .pb_subnav_tip .tip_amount i {
+      font-style: normal;
+      color: #ff643c;
+      font-family: Arial; }
+    .pb_subnav_tip .tip_amount s {
+      width: 1px;
+      height: 10px;
+      background: #fff;
+      display: inline-block;
+      margin: 0px 10px; }
+  .pb_subnav_tip li a {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px; }
+
+/* 商品列表 */
+.pb_list_goods {
+  margin-bottom: 20px; }
+  .pb_list_goods ul {
+    margin-left: -20px; }
+    .pb_list_goods ul li {
+      float: left;
+      width: 260px;
+      height: 360px;
+      margin: 20px 0 0 20px;
+      background: #fff; }
+  .pb_list_goods .goods_img {
+    width: 260px;
+    height: 260px; }
+    .pb_list_goods .goods_img a, .pb_list_goods .goods_img img {
+      display: block;
+      width: 260px;
+      height: 260px; }
+  .pb_list_goods .goods_price {
+    width: 240px;
+    height: 89px;
+    padding: 11px 10px 0;
+    position: relative; }
+  .pb_list_goods .pro_name {
+    width: 240px;
+    height: 42px;
+    margin-bottom: 20px;
+    overflow: hidden; }
+    .pb_list_goods .pro_name a {
+      width: 240px;
+      height: 42px;
+      display: block;
+      line-height: 20px;
+      color: #6c6c6c; }
+  .pb_list_goods .now_price {
+    margin-top: -14px; }
+    .pb_list_goods .now_price i {
+      font-style: normal;
+      color: #ff643c;
+      font-size: 14px;
+      font-family: 微软雅黑; }
+  .pb_list_goods .price_day {
+    font-size: 26px;
+    color: #ff643c;
+    font-family: Arial; }
+  .pb_list_goods .buy_btn {
+    width: 90px;
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    background: #ff643c; }
+    .pb_list_goods .buy_btn a {
+      width: 90px;
+      height: 26px;
+      display: block;
+      text-align: center;
+      line-height: 26px;
+      color: #fff; }
+
+/* 下边页数 */
+.pb_list_page {
+  text-align: center;
+  margin-top: 30px; }
+  .pb_list_page ul {
+    text-align: center;
+    font-size: 0; }
+    .pb_list_page ul li {
+      display: inline-block;
+      margin-right: 7px;
+      font-size: 0; }
+      .pb_list_page ul li a {
+        display: block;
+        padding: 0 7px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: #6c6c6c;
+        background: #fff;
+        font-size: 12px;
+        border: 1px #c4c4c4 solid;
+        overflow: hidden; }
+    .pb_list_page ul .page_current a, .pb_list_page ul li:hover a {
+      color: #fff;
+      background: #c4c4c4; }
 
 /* 底栏搜索框 */
 .b_search_box {
