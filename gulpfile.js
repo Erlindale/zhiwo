@@ -15,6 +15,13 @@ gulp.task("shtml",()=>{
 				.pipe(gulp.dest("dist/html"))
 				.pipe(connect.reload());
 })
+gulp.task('scripts',() => {
+    return gulp
+        .src('scripts/**/*.js')
+        .pipe(gulp.dest('dist/scripts'))//*代表所有
+        .pipe(connect.reload());
+} );
+
 gulp.task("images",()=>{
 	return gulp
 				.src(["images/**/*"])
@@ -22,9 +29,13 @@ gulp.task("images",()=>{
 				.pipe(connect.reload());
 
 })
-
+gulp.task('data',() => {
+    return gulp
+        .src('data/*.json')
+        .pipe(gulp.dest('dist/data'))//*代表所有
+} );
 gulp.task("watch",()=>{
-	gulp.watch(["scss/*.scss","*.html","images/**/*","html/*.html"],["sass","html","images","shtml"]);
+	gulp.watch(["scss/*.scss","*.html","images/**/*","html/*.html","scripts/**/*.js", "data/*.json"],["sass","html","images","shtml","scripts", "data"]);
 })
 gulp.task("server",function(){
 	connect.server({
