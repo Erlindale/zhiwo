@@ -106,6 +106,12 @@ s, strike, del {
   .item_personal a i {
     background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px; }
 
+.item_personal:hover {
+  background: #fff; }
+
+.item_personal:hover a i {
+  background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -105px; }
+
 .item_personal_subnav {
   width: 100%;
   position: absolute;
@@ -124,12 +130,6 @@ s, strike, del {
     padding: 0; }
     .item_personal_subnav ul li a {
       padding-left: 12px; }
-
-.item_btn:hover .item_personal_subnav {
-  display: block; }
-
-.header_top_right .item_personal:hover {
-  background: #fff; }
 
 .wechat_ewm_img img {
   display: block;
@@ -338,6 +338,9 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
     padding-right: 11px;
     background: url(http://www.zhiwo.com/static/images/ico/mainnav.png) no-repeat right -8px; }
 
+.hmcm_list:hover span {
+  background: none; }
+
 .hmcm_shop_list {
   width: 1065px;
   position: absolute;
@@ -347,10 +350,6 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
   padding: 4px 30px 30px 5px;
   z-index: 200;
   display: none; }
-
-/* 暂时写成hover，回头改成js */
-.hmcm_list:hover .hmcm_shop_list {
-  display: block; }
 
 .hmcm_shop_listcont {
   width: 800px;
@@ -456,12 +455,18 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0; }
+    z-index: 0;
+    transform: scale(1.05);
+    transition: transform 2.5s linear 0s; }
     .f_img li a {
       display: block;
       width: 100%;
-      height: 350px;
-      background: url(http://images.zhiwo.com/product/2018/0111/13545024053617419274.jpg) no-repeat center top; }
+      height: 350px; }
+      .f_img li a img {
+        width: 100%;
+        height: 100%; }
+  .f_img .scle {
+    transform: scale(1); }
 
 .f_btn {
   position: absolute;
@@ -910,6 +915,14 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
 
 .snav_today_deals a {
   background: url(http://www.zhiwo.com/static/images/ico/snav.png) no-repeat 0 -180px; }
+
+.side_nav li:hover, .side_nav .snav_current {
+  background: #00c8ff; }
+
+.side_nav li:hover a, .side_nav .snav_current a {
+  color: #fff;
+  height: 20px;
+  border-bottom: 0; }
 
 /* footer */
 .footer {

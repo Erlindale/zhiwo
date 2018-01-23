@@ -51,7 +51,7 @@
 							</div>
 						</li>
 						<li class="item_line">|</li>
-						<li class="item_service item_btn">
+						<li class="item_service item_btn item_personal">
 							<a href="#javascript">
 								<span>客户服务</span>
 								<i></i>
@@ -147,7 +147,7 @@
 								<a class="mainnav" href="#javascript">
 									<span>知我商城</span>
 								</a>
-								<div class="hmcm_shop_list clear item_cont">
+								<div class="hmcm_shop_list clear item_cont item_personal_subnav">
 									<div class="hmcm_shop_listcont">
 										<div class="mainlist_row clear">
 											<div class="mainlist_inner hufu">
@@ -238,19 +238,19 @@
 		<div class="focus_box">
 			<div id="playimages" class="focus_box">
 				<ul class="f_img">
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
-					<li><a href="" target="_blank"></a></li>
+					<li style="z-index: 3"><a href="" target="_blank"><img src="http://images.zhiwo.com/product/2018/0111/13545024053617419274.jpg" alt=""></a></li>
+					<li><a href="" target="_blank"><img src="http://images.zhiwo.com/product/2017/0810/11887805101997284419.jpg"></a></li>
+					<li><a href="" target="_blank"><img src="http://images.zhiwo.com/product/2017/0810/9209922747564342608.jpg" alt=""></a></li>
+					<li><a href="" target="_blank"><img src="http://images.zhiwo.com/product/2016/0826/15900537550058584496.jpg" alt=""></a></li>
+					<li><a href="" target="_blank"><img src="http://images.zhiwo.com/product/2017/0105/16270930103727000139.jpg" alt=""></a></li>
 				</ul>
 				<div class="f_btn">
 					<ul class="clear">
-						<li></li>
+						<li class="f_btn_current"></li>
 						<li></li>
 						<li></li>
 						<!-- 暂时写个样式看着 -->
-						<li class="f_btn_current"></li>
+						<li ></li>
 						<li></li>
 					</ul>
 				</div>
@@ -258,7 +258,7 @@
 		</div>
 		<!-- main begin -->
 		<div class="content-box">
-			<div class="mainpush_box">
+			<div id="mainpush" class="mainpush_box">
 				<h1>
 					<span>今日头条</span>
 					<i>TODAY HEADLINES</i>
@@ -401,12 +401,12 @@
 				</div>
 			</div>
 			<!-- 品牌推荐 -->
-			<div class="brand_box">
+			<div id="brandgroup" class="brand_box">
 				<div class="brand_b_nav">
 					<ul class="clear">
-						<li ><span>畅销品牌</span><i></i></li>
+						<li  class="bbn_current"><span>畅销品牌</span><i></i></li>
 						<!-- 暂时写一个回头用js改 -->
-						<li class="bbn_current"><span>欧美品牌</span><i></i></li>
+						<li><span>欧美品牌</span><i></i></li>
 						<li><span>日韩品牌</span><i></i></li>
 						<li><span>国内品牌</span><i></i></li>
 					</ul>
@@ -418,7 +418,7 @@
 							<ul class="clear">
 								<li>
 									<a href="###" target="_blank">
-									<img src="http://images.zhiwo.com/product/2015/0731/11633789268330446680.jpg">
+									<img src="<!-- http://images.zhiwo.com/product/2015/0731/11633789268330446680.jpg -->">
 									</a>
 								</li>
 								<li>
@@ -479,7 +479,7 @@
 				<div class="bbc_rightbtn">&gt;</div>
 			</div>
 			<!-- 今日新品 -->
-			<div class="newpro_box cb_title_h2">
+			<div id="newpro" class="newpro_box cb_title_h2">
 				<h2><p><span>今日新品</span><i>HOT DEALS TODAY</i></p></h2>
 				<div class="n_list">
 					<ul class="clear">
@@ -618,12 +618,12 @@
 	       </div>
 		</div>
 		<!-- 楼梯 -->
-		<div class="side_nav" style="display: block;">
+		<div class="side_nav">
 		<ul>
-			<li class="snav_zhiwo_index"><a href="###"><span>知我<br>首页</span></a></li>
-			<li class="snav_main_push"><a href="###"><span>今日头条</span></a></li>
-			<li class="snav_group"><a href="###"><span>品牌团</span></a></li>
-			<li class="snav_today_deals"><a href="###"><span>上新单品</span></a></li>
+			<li class="snav_zhiwo_index"><a href="#"><span>知我<br>首页</span></a></li>
+			<li class="snav_main_push"><a href="#mainpush"><span>今日头条</span></a></li>
+			<li class="snav_group"><a href="#brandgroup"><span>品牌团</span></a></li>
+			<li class="snav_today_deals"><a href="#newpro"><span>上新单品</span></a></li>
 		</ul>
 	</div>
 		<!-- main end -->
