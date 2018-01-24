@@ -644,6 +644,9 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
   width: 840px;
   overflow: hidden; }
 
+.brand_bc_page {
+  display: none; }
+
 .bbc_listbrand ul {
   margin-top: -8px; }
 
@@ -1085,6 +1088,9 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
 .sitem_btn {
   display: block;
   width: 35px; }
+
+.sidebar_item:hover {
+  background: #00c8ff; }
 
 .sitem_btnbg {
   display: block;

@@ -101,15 +101,17 @@
 						<div class="u_info_account">
 							<p class="u_info_name">
 								<label for="login-username">账号</label>
+								<span class="error">账户错误!</span>
 							</p>
 							<p class="u_info_txt">
-								<input class="sign_txt" type="text" id="login-username" value="" placeholder="请输入用户名/邮箱/手机号" name="username">
+								<input class="sign_txt" type="text" id="login-username" value placeholder="请输入用户名/邮箱/手机号" name="username">
 							</p>
 							
 						</div>
 						<div class="u_info_password u_info_h password">
 							<p class="u_info_name">
 								<label for="login-password">密码</label>
+								<span class="error">密码错误!</span>
 							</p>
 							<p class="u_info_txt">
 								<input id="signup-password" class="sign_txt" type="password" name="password" placeholder="请输入密码">
@@ -128,7 +130,7 @@
 						<div class="u_info_operate">
 							<br><br>
 							<p class="auto_login">
-								<label class="u_check u_checked" for="auto_login">自动登录</label>
+								<label class="u_check" for="auto_login">自动登录</label>
 							</p>
 							<p class="forget_password">
 								<a href="###">忘记密码？</a>
@@ -229,4 +231,6 @@
 		</div>
 </div>
 </body>
+<script src="../scripts/common/require.js"></script>
+	<script src="../scripts/login/login.js"></script>
 </html>

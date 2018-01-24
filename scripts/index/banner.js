@@ -44,7 +44,7 @@ define(["jquery"],function($){
 				"z-index":"0",
 				"opacity":""
 			});
-		},
+		}, 
 		autoplay:function(){
 			clearInterval(this.$timer);
 			var _this = this;

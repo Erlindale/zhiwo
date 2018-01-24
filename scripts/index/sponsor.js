@@ -14,22 +14,14 @@ define(["jquery"],function($){
 			this.$li.mouseleave($.proxy(this.switch));
 		},
 		spread:function(){
-			// console.log(1)
-			$(this)
-			.stop(true)// 当前 li this;
-			.animate({
-				width:74
-			})
-			.find(".fcb_return")//最后一个宽度为100
-					.end().stop(true)
-					.animate({
-						width:100
-					})
-			.siblings().stop(true)//兄弟级;
-					.animate({
-						width:0
-					})
-			console.log(1);
+			var index = $(this).index()
+			if(index < 3){
+				$(this).stop().animate({width:'74px'},600);
+
+			}else{
+				$(this).stop().animate({width:'100px'},600);
+
+			}
 		},
 		switch:function(){
 			$(this)

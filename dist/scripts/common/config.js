@@ -7,6 +7,7 @@ requirejs.config({
 		"sponsor":"../scripts/index/sponsor",
 		"banner":"../scripts/index/banner",
 		"sidebar":"../scripts/index/sidebar",
-		"tab":"../scripts/index/tab"
+		"tab":"../scripts/index/tab",
+		"fixedbar":"../scripts/index/fixedbar"
 	}
 })

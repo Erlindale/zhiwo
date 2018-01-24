@@ -238,6 +238,14 @@ s, strike, del {
     font-size: 16px;
     font-family: '微软雅黑';
     color: #000; }
+  .u_info_name span {
+    float: right; }
+
+.error {
+  font-size: 12px;
+  color: #ff643c;
+  margin-top: 3px;
+  display: none; }
 
 .u_info_txt {
   position: relative; }
@@ -249,6 +257,10 @@ s, strike, del {
     padding: 7px 0;
     color: #6c6c6c;
     padding-left: 10px; }
+
+.sign_box .focus_sel {
+  box-shadow: 0 0 7px #0dcafe;
+  border: 1px #0dcafe solid; }
 
 .u_info_password {
   margin-bottom: 10px; }
@@ -370,6 +382,10 @@ s, strike, del {
       display: block; }
   .footer_intro .footer_intro_mrl {
     margin-left: 8px; }
+
+.footer .w960 dl {
+  width: 110px;
+  margin-left: 10px; }
 
 .contact_method {
   font-weight: bold;
