@@ -297,6 +297,13 @@ s, strike, del {
   .zhiwo_xieyi a {
     color: #00c8ff; }
 
+.sign_box .focus_sel {
+  box-shadow: 0 0 7px #0dcafe;
+  border: 1px #0dcafe solid; }
+
+.u_info_code .u_info_txt {
+  overflow: hidden; }
+
 .userlogin_other {
   border-top: 1px #e3e3e3 dotted;
   padding-top: 20px; }
@@ -323,16 +330,16 @@ s, strike, del {
     background-position: 0 -30px; }
   .ext_connect .sina a {
     background-position: 0 -60px; }
-  .ext_connect .ext_connect .t360 a {
+  .ext_connect .t360 a {
     background-position: 0 -90px;
     font-size: 14px;
     font-family: Arial; }
-  .ext_connect .ext_connect .baidu a {
+  .ext_connect .baidu a {
     background-position: 0 -120px; }
-  .ext_connect .ext_connect .renren a {
+  .ext_connect .renren a {
     width: 47px;
     background-position: 0 -180px; }
-  .ext_connect .ext_connect .xunlei a {
+  .ext_connect .xunlei a {
     background-position: 0 -210px; }
 
 /* footer */
@@ -402,6 +409,10 @@ s, strike, del {
       display: inline-block;
       padding-left: 30px;
       text-align: left; }
+
+.footer .w960 dl {
+  width: 110px;
+  margin-left: 10px; }
 
 .fcb_invest {
   background: url(http://www.zhiwo.com/static/images/ico/assure2.png) no-repeat 0 0; }

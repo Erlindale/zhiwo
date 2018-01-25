@@ -1,7 +1,10 @@
 /*业务逻辑页面*/  //t代表通信成功
 require(["scripts/index/config.js"],function(){
-	require(["jquery","header_topnav","sponsor","banner","sidebar","tab","fixedbar"],function($,topnav,sponsor,banner,sidebar,tab,fixedbar){
+	require(["jquery","rendring","header_topnav","sponsor","banner","sidebar","tab","fixedbar","down"],function($,rendring,topnav,sponsor,banner,sidebar,tab,fixedbar,down){
 		// console.log($);链接成功
+		// console.log(rendring)
+		// console.log(rendring)
+		rendring;
 		// 下拉二级菜单  t
 		topnav.init($(".item_btn"));
 		
@@ -21,5 +24,7 @@ require(["scripts/index/config.js"],function(){
   
 		fixedbar.init();
 
+		//倒计时   t
+		down.init();
 	})
 })

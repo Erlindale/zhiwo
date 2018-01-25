@@ -582,6 +582,17 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
     color: #6c6c6c; }
   .detail_single_introamoutbtn .header_ginfo_amount {
     border: 1px #c6c6c6 solid; }
+    .detail_single_introamoutbtn .header_ginfo_amount span {
+      width: 24px;
+      height: 24px;
+      float: left;
+      cursor: pointer; }
+
+.h_amout_down, .amout_down_style {
+  background: url(http://www.zhiwo.com/static/images/ico/updown.png) no-repeat 0 -24px; }
+
+.h_amout_up, .amout_up_style {
+  background: url(http://www.zhiwo.com/static/images/ico/updown.png) no-repeat 0 0; }
 
 .header_ginfo_amount {
   width: 77px;

@@ -114,13 +114,21 @@
 						<p class="u_info_txt">
 							<input id="signup-password" class="sign_txt" type="password" name="password" placeholder="请输入密码">
 						</p>
-						<p class="error"></p>
+						<p class="error">
+							<div class="f-input-tip error">
+								<div class="message">密码长度需6-16位字符</div>
+							</div>
+						</p>
 					</div>
 					<div class="u_info_password u_info_h password_confirm">
 						<p class="u_info_txt">
 							<input id="signup-password-confirm" class="sign_txt" type="password" name="password2" placeholder="确定密码">
 						</p>
-						<p class="error"></p>
+						<p class="error">
+							<div class="f-input-tip error">
+								<div class="message">两次输入的密码不匹配</div>
+							</div>
+						</p>
 					</div>
 					<div class="u_info_code u_info_h verifycode">
 						<p class="u_info_txt">
@@ -128,10 +136,14 @@
 							<img id="verify_code" src="http://www.zhiwo.com/verifycode" alt="验证码">
 							<span id="change_code">换一张</span>
 						</p>
-						<p class="error"></p>
+						<p class="error">
+							<div class="f-input-tip error">
+								<div class="message">验证码有误,请重新输入</div>
+							</div>
+						</p>
 					</div>
 					<div class="u_info_btn">
-						<p><input type="submit" id="signup-submit" value="同意协议并注册"></p>
+						<p><input type="button" id="signup-submit" value="同意协议并注册"></p>
 						<p class="zhiwo_xieyi"><a href="###">《知我网用户协议》</a></p>
 					</div>
 				</form>
@@ -212,7 +224,7 @@
 					<li class="fcb_mail"><span>139元包邮</span></li>
 				</ul>
 			</div>
-		</div>
+		</div>  
         <div class="footer_copyright">
 			<p class="footer_c_text1">© 2015-2019 知我天成科技（北京）股份有限公司 zhiwo.com 保留一切权利。客服热线：400-630-1018</p>
 			<p class="footer_c_text2">
@@ -226,4 +238,6 @@
 		</div>
 </div>
 </body>
+<script src="../scripts/common/require.js"></script>
+<script src="../scripts/register/register.js"></script>
 </html>

@@ -8,6 +8,8 @@ requirejs.config({
 		"banner":"scripts/index/banner",
 		"sidebar":"scripts/index/sidebar",
 		"tab":"scripts/index/tab",
-		"fixedbar":"scripts/index/fixedbar"
+		"fixedbar":"scripts/index/fixedbar",
+		"rendring":"scripts/index/rendring",
+		"down":"scripts/index/down"
 	}
 })
