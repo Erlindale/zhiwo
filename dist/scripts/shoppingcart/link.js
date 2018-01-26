@@ -14,17 +14,17 @@ define( [ "jquery" ],function(){
 			this.clogo.on("click",$.proxy(this.to_index,this));
 		};
 		to_reg(){
-			self.location.href = "http://localhost:8888/html/register.html";
+			self.location.href = "html/register.html";
 		};
 		to_register(){
-			this.reg.attr( "href", "http://localhost:8888/html/register.html" );
+			this.reg.attr( "href", "html/register.html" );
 		};
 
 		to_login(){
-			self.location.href = "http://localhost:8888/html/login.html";
+			self.location.href = "html/login.html";
 		};
 		to_index(){
-			self.location.href = "http://localhost:8888/index.html"
+			self.location.href = "../index.html"
 		}
 	};
 	return new Link();

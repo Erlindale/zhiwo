@@ -15,17 +15,17 @@ define( [ "jquery" ],function(){
 		};
 		
 		to_log(){
-			this.sign.attr( "href", "http://localhost:8888/html/login.html" );
+			this.sign.attr( "href", "html/login.html" );
 		};
 		to_register(){
-			self.location.href = "http://localhost:8888/html/register.html";
+			self.location.href = "html/register.html";
 		};
 
 		to_login(){
-			self.location.href = "http://localhost:8888/html/login.html";
+			self.location.href = "html/login.html";
 		};
 		to_index(){
-			self.location.href = "http://localhost:8888/index.html"
+			self.location.href = "../index.html"
 		}
 	};
 	return new Link();

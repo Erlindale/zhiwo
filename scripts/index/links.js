@@ -23,7 +23,7 @@ define( [ "jquery" ], function(){
 		to_login(){
 			window.location.href = "html/login.html";
 		};
-		to_register(){
+		to_register(){ 
 			window.location.href = "html/register.html";
 		};
 		to_shoppingcart(){

@@ -21,25 +21,25 @@ define( [ "jquery" ], function(){
 
 		};
 		to_login(){
-			self.location.href = "http://localhost:8888/html/login.html";
+			window.location.href = "html/login.html";
 		};
-		to_register(){
-			self.location.href = "http://localhost:8888/html/register.html";
+		to_register(){ 
+			window.location.href = "html/register.html";
 		};
 		to_shoppingcart(){
-			self.location.href = "http://localhost:8888/html/shoppingcart.html";
+			window.location.href = "html/shoppingcart.html";
 		};
 		to_productslist(){
-			self.location.href = "http://localhost:8888/html/productslist.html"
+			window.location.href = "html/productslist.html"
 		};
 		to_grouppurchase(){
-			self.location.href = "http://localhost:8888/html/group_purchase.html"
+			window.location.href = "html/group_purchase.html"
 		};
 		to_product(){
-			self.location.href = "http://localhost:8888/html/product.html"
+			window.location.href = "html/product.html"
 		};
 		to_index(){
-			self.location.href = "http://localhost:8888/index.html"
+			window.location.href = "index.html"
 		}
 	};
 	return new Link();
