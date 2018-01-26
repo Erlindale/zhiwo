@@ -21,22 +21,22 @@ define( [ "jquery" ], function(){
 
 		};
 		to_login(){
-			window.location.href = "/html/login.html";
+			window.location.href = "html/login.html";
 		};
 		to_register(){
-			window.location.href = "/html/register.html";
+			window.location.href = "html/register.html";
 		};
 		to_shoppingcart(){
-			window.location.href = "/html/shoppingcart.html";
+			window.location.href = "html/shoppingcart.html";
 		};
 		to_productslist(){
-			window.location.href = "/html/productslist.html"
+			window.location.href = "html/productslist.html"
 		};
 		to_grouppurchase(){
-			window.location.href = "/html/group_purchase.html"
+			window.location.href = "html/group_purchase.html"
 		};
 		to_product(){
-			window.location.href = "/html/product.html"
+			window.location.href = "html/product.html"
 		};
 		to_index(){
 			window.location.href = "index.html"
