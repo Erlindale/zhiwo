@@ -19,22 +19,22 @@ define( [ "jquery" ], function(){
 			this.clogo.on("click",$.proxy(this.to_index,this));
 		};
 		to_login(){
-			window.location.href = "login.html";
+			window.location.href = "../html/login.html";
 		};
 		to_register(){
-			window.location.href = "register.html";
+			window.location.href = "../html/register.html";
 		};
 		to_shoppingcart(){
-			window.location.href = "shoppingcart.html";
+			window.location.href = "../html/shoppingcart.html";
 		};
 		to_productslist(){
-			window.location.href = "productslist.html"
+			window.location.href = "../html/productslist.html"
 		};
 		// to_grouppurchase(){
 		// 	self.location.href = "http://localhost:8888/html/group_purchase.html"
 		// };
 		to_product(){ 
-			window.location.href = "product.html"
+			window.location.href = "../html/product.html"
 		};  
 		to_index(){
 			window.location.href = "../index.html"

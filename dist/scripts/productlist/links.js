@@ -17,16 +17,16 @@ define( [ "jquery" ], function(){
 			this.clogo.on("click",$.proxy(this.to_index,this));
 		};
 		to_login(){     
-			self.location.href = "login.html";
+			self.location.href = "../html/login.html";
 		};
 		to_register(){
-			self.location.href = "register.html";
+			self.location.href = "../html/register.html";
 		};
 		to_shoppingcart(){
-			self.location.href = "shoppingcart.html";
+			self.location.href = "../html/shoppingcart.html";
 		};
 		to_product(){
-			self.location.href = "product.html"
+			self.location.href = "../html/product.html"
 		};
 		to_index(){
 			self.location.href = "../index.html"
