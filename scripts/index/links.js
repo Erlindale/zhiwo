@@ -21,25 +21,25 @@ define( [ "jquery" ], function(){
 
 		};
 		to_login(){
-			self.location.href = "html/login.html";
+			window.location.href = "html/login.html";
 		};
 		to_register(){
-			self.location.href = "html/register.html";
+			window.location.href = "html/register.html";
 		};
 		to_shoppingcart(){
-			self.location.href = "html/shoppingcart.html";
+			window.location.href = "html/shoppingcart.html";
 		};
 		to_productslist(){
-			self.location.href = "html/productslist.html"
+			window.location.href = "html/productslist.html"
 		};
 		to_grouppurchase(){
-			self.location.href = "html/group_purchase.html"
+			window.location.href = "html/group_purchase.html"
 		};
 		to_product(){
-			self.location.href = "html/product.html"
+			window.location.href = "html/product.html"
 		};
 		to_index(){
-			self.location.href = "index.html"
+			window.location.href = "index.html"
 		}
 	};
 	return new Link();
