@@ -15,8 +15,8 @@
     line-height: 30px;
     margin: 0 auto;
     a{
-    	color: #6c6c6c;
-   	 	display: block;
+        color: #6c6c6c;
+        display: block;
     }
 }
 .header_top_left li {
@@ -26,23 +26,23 @@
     float: left;
     padding: 0 12px;
     a{
-    	overflow: hidden;
+        overflow: hidden;
     }
     span{
-    	float: left;
+        float: left;
     }
     i{
-    	float: left;
-	    width: 6px;
-	    height: 29px;
-	    margin-left: 7px;
+        float: left;
+        width: 6px;
+        height: 29px;
+        margin-left: 7px;
     }
 }
 .item_personal {
     position: relative;
     z-index: 399;
     a i{
-    	background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
+        background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
     }
 }
 .item_personal_subnav {
@@ -58,17 +58,17 @@
     overflow: hidden;
     display: none;
     ul li{
-    	clear: left;
-	    width: 100%;
-	    padding: 0;
-	    a{
-	    	padding-left: 12px;
-	    }
+        clear: left;
+        width: 100%;
+        padding: 0;
+        a{
+            padding-left: 12px;
+        }
     }
 }
-.item_btn:hover .item_personal_subnav{
-	display:block;
-}
+// .item_btn:hover .item_personal_subnav{
+//  display:block;
+// }
 .header_top_right .item_personal:hover {
     background: #fff;
 }
@@ -87,7 +87,7 @@
     position: relative;
     z-index: 399;
     i{
-    	background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
+        background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
     } 
 }
 /* logo */

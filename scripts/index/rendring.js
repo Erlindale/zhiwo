@@ -23,7 +23,7 @@ define( [ "jquery" ], function(){
 			let set_str = {
 				url : "data/index_data.json",
 				type : "GET"
-			}
+			}   
 			$.ajax( set_str ).then($.proxy(this.render,this));;
 		};
 		render( res ){	

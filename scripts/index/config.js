@@ -10,6 +10,8 @@ requirejs.config({
 		"tab":"scripts/index/tab",
 		"fixedbar":"scripts/index/fixedbar",
 		"rendring":"scripts/index/rendring",
-		"down":"scripts/index/down"
+		"down":"scripts/index/down",
+		"search":"scripts/index/search",
+		"links":"scripts/index/links"
 	}
 })

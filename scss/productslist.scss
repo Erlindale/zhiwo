@@ -2,6 +2,7 @@
 @import "../scss/public";
 
 /* header top */
+
 .header {
     width: 100%;
 }
@@ -15,8 +16,8 @@
     line-height: 30px;
     margin: 0 auto;
     a{
-    	color: #6c6c6c;
-   	 	display: block;
+        color: #6c6c6c;
+        display: block;
     }
 }
 .header_top_left li {
@@ -26,24 +27,30 @@
     float: left;
     padding: 0 12px;
     a{
-    	overflow: hidden;
+        overflow: hidden;
     }
     span{
-    	float: left;
+        float: left;
     }
     i{
-    	float: left;
-	    width: 6px;
-	    height: 29px;
-	    margin-left: 7px;
+        float: left;
+        width: 6px;
+        height: 29px;
+        margin-left: 7px;
     }
 }
 .item_personal {
     position: relative;
     z-index: 399;
     a i{
-    	background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
+        background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
     }
+}
+.item_personal:hover {
+    background: #fff;
+}
+.item_personal:hover a i {
+    background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -105px;
 }
 .item_personal_subnav {
     width: 100%;
@@ -58,20 +65,17 @@
     overflow: hidden;
     display: none;
     ul li{
-    	clear: left;
-	    width: 100%;
-	    padding: 0;
-	    a{
-	    	padding-left: 12px;
-	    }
+        clear: left;
+        width: 100%;
+        padding: 0;
+        a{
+            padding-left: 12px;
+        }
     }
 }
-.item_btn:hover .item_personal_subnav{
-	display:block;
-}
-.header_top_right .item_personal:hover {
-    background: #fff;
-}
+// .item_btn:hover .item_personal_subnav{
+//  display:block;
+// }
 .wechat_ewm_img img {
     display: block;
     width: 100%;
@@ -87,7 +91,7 @@
     position: relative;
     z-index: 399;
     i{
-    	background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
+        background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
     }
 }
 
@@ -106,27 +110,57 @@
 .header_clogo {
     width: 260px;
     height: 108px;
-	a{
-		display: block;
-	    width: 260px;
-	    height: 108px;
-	    img{
-	    	display: block;
-		    width: 260px;
-		    height: 108px;
-	    }
-	}
+    a{
+        display: block;
+        width: 260px;
+        height: 108px;
+        img{
+            display: block;
+            width: 260px;
+            height: 108px;
+        }
+    }
 }
 /* 搜索框 */
 .header_csearch {
     margin: 25px 0 0 80px;
 }
 .search_form{
-	background: #fff;
+    background: #fff;
     height: 40px;
+    position:relative;
     .search_box_text {
-   		width: 318px;
-	}
+        width: 318px;
+
+    }
+    .search_list{
+        width: 420px;
+        background-color: #fff;
+        position: absolute;
+        top: 40px;
+        z-index: 10;
+        border:2px #00c8ff solid;
+        border-top:none;
+        box-sizing: border-box;
+        padding-top: 1px;
+        display: none;
+        li{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                color:#000;
+                font-size: 14px;
+            }
+            a:hover{
+                 background-color: #f5f5f5;
+            }
+        }   
+    }
 }
 .search_box_text {
     border: 0;
@@ -154,26 +188,27 @@
     text-align: center;
     line-height: 40px;
 }
+
 /* 热搜关键字 */
 .hotkey {
     margin-top: 6px;
-	li {
-	    float: left;
-	    overflow: hidden;
-	    a{
-	    	color: #6c6c6c;
-		    margin: 0 9px;
-		    float: left;
-	    }
-	    .line {
-		    font-style: normal;
-		    width: 1px;
-		    background: #c4c4c4;
-		    height: 10px;
-		    float: left;
-		    margin-top: 2px;
-		}
-	}
+    li {
+        float: left;
+        overflow: hidden;
+        a{
+            color: #6c6c6c;
+            margin: 0 9px;
+            float: left;
+        }
+        .line {
+            font-style: normal;
+            width: 1px;
+            background: #c4c4c4;
+            height: 10px;
+            float: left;
+            margin-top: 2px;
+        }
+    }
 }
 
 /* 购物车 */
@@ -205,24 +240,24 @@
     color: #6c6c6c;
     background: #fff url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 10px -210px;
     overflow: hidden;
-	border-radius: 3px;
-	box-shadow: 0 0 2px #d8d8d8;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #d8d8d8;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 300;
     border: 1px #e2e2e2 solid;
     span{
-    	float: left;
+        float: left;
     }
     i{
-    	float: left;
-	    width: 6px;
-	    height: 31px;
-	    background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
-	    overflow: hidden;
-	    margin-left: 6px;
-	    margin-top: 3px;
+        float: left;
+        width: 6px;
+        height: 31px;
+        background: url(http://www.zhiwo.com/static/images/ico/topnav.png) no-repeat 0 -70px;
+        overflow: hidden;
+        margin-left: 6px;
+        margin-top: 3px;
     }
 }
 .header_shopgoods {
@@ -234,35 +269,35 @@
     background: #fff;
     padding: 0 10px 10px;
     z-index: 200;
-	border-radius: 3px;
+    border-radius: 3px;
     box-shadow: 0 0 2px #d8d8d8;
     display: none;
     .shopgoods_empty {
-	    padding: 30px 0;
-	    p {
-		    text-align: center;
-		    font-family: '微软雅黑';
-		}
-	}
-	.shopgoods_empty_img {
-	    width: 135px;
-	    height: 164px;
-	    margin: 0 auto;
-	    background: url(http://images.zhiwo.com/product/2015/0612/empty.png) no-repeat;
-	}
-	.shopgoods_empty_tip1 {
-	    font-size: 24px;
-	    color: #c4c4c4;
-	    margin-top: 10px;
-	}
-	.shopgoods_empty_tip2 {
-	    font-size: 18px;
-	    color: #c4c4c4;
-	}
+        padding: 30px 0;
+        p {
+            text-align: center;
+            font-family: '微软雅黑';
+        }
+    }
+    .shopgoods_empty_img {
+        width: 135px;
+        height: 164px;
+        margin: 0 auto;
+        background: url(http://images.zhiwo.com/product/2015/0612/empty.png) no-repeat;
+    }
+    .shopgoods_empty_tip1 {
+        font-size: 24px;
+        color: #c4c4c4;
+        margin-top: 10px;
+    }
+    .shopgoods_empty_tip2 {
+        font-size: 18px;
+        color: #c4c4c4;
+    }
 }
 
 .header_cshopcar:hover .header_shopgoods{
-	display:block;
+    display:block;
 }
 /* 主体导航 */
 .header_mainnav {
@@ -303,6 +338,9 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
         background: url(http://www.zhiwo.com/static/images/ico/mainnav.png) no-repeat right -8px;
     }
 }
+.hmcm_list:hover span{
+    background:none;
+}
 // 详细导航栏
 .hmcm_shop_list {
     width: 1065px;
@@ -313,10 +351,6 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
     padding: 4px 30px 30px 5px;
     z-index: 200;
     display: none;
-}
-/* 暂时写成hover，回头改成js */
-.hmcm_list:hover .hmcm_shop_list{
-    display:block;
 }
 .hmcm_shop_listcont {
     width: 800px;
@@ -913,6 +947,38 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
 }
 .sidebar_item {
     position: relative;
+    .sidebar_tooltip {
+        width: 103px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: #6c6c6c;
+        color: #fff;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        display: block;
+        a{
+            color:#fff;
+        }
+        span{
+            margin: 0 10px;
+        }
+        .triangle {
+            position: absolute;
+            right: -8px;
+            top: 14px;
+            width: 0;
+            height: 0;
+            border-width: 4px;
+            border-style: dashed dashed dashed solid;
+            border-color: transparent transparent transparent #6c6c6c;
+        }
+    }
+    .wechat{
+        display: none;
+    }
 }
 .sidebar_login {
     margin-bottom: 21px;
@@ -930,34 +996,15 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
 .sidebar_login .sitem_btnbg {
     background-position: 0 0;
 }
-.sidebar_tooltip {
-    width: 103px;
-    height: 35px;
-    line-height: 35px;
-    background: #6c6c6c;
-    text-align: center;
-    color: #fff;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0px;
+
+.sidebar_item:hover{
+    background:#00c8ff;
+}
+.sidebar_item:hover .wechat{
+    right:10px;
+    z-index: 30;
+    opacity: 1;
     display: block;
-    a{
-        color:#fff;
-    }
-    span{
-        margin: 0 10px;
-    }
-    .triangle {
-        position: absolute;
-        right: -8px;
-        top: 14px;
-        width: 0;
-        height: 0;
-        border-width: 4px;
-        border-style: dashed dashed dashed solid;
-        border-color: transparent transparent transparent #6c6c6c;
-    }
 }
 .sidebar_shopcar {
     height: 126px;

@@ -66,9 +66,9 @@
 	    }
     }
 }
-.item_btn:hover .item_personal_subnav{
-	display:block;
-}
+// .item_btn:hover .item_personal_subnav{
+// 	display:block;
+// }
 .header_top_right .item_personal:hover {
     background: #fff;
 }
@@ -121,8 +121,38 @@
 .search_form{
     background: #fff;
     height: 40px;
+    position:relative;
     .search_box_text {
         width: 318px;
+
+    }
+    .search_list{
+        width: 420px;
+        background-color: #fff;
+        position: absolute;
+        top: 40px;
+        z-index: 10;
+        border:2px #00c8ff solid;
+        border-top:none;
+        box-sizing: border-box;
+        padding-top: 1px;
+        display: none;
+        li{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                color:#000;
+                font-size: 14px;
+            }
+            a:hover{
+                 background-color: #f5f5f5;
+            }
+        }   
     }
 }
 .search_box_text {
@@ -258,9 +288,9 @@
     }
 }
 
-.header_cshopcar:hover .header_shopgoods{
-    display:block;
-}
+// .header_cshopcar:hover .header_shopgoods{
+//     display:block;
+// }
 /* 主体导航 */
 .header_mainnav {
     height: 35px;
@@ -311,10 +341,7 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
     z-index: 200;
     display: none;
 }
-/* 暂时写成hover，回头改成js */
-.hmcm_list:hover .hmcm_shop_list{
-    display:block;
-}
+
 .hmcm_shop_listcont {
     width: 800px;
     float: left;
@@ -831,6 +858,10 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
         }
     }
 }
+.pb_list_goods .goods_img a:hover {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+}
 .samebrand_rank .pb_list_goods .goods_img a, .pb_list_goods .goods_img img {
     width: 225px;
     height: 225px;
@@ -865,6 +896,9 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
 
     }
 }
+.prolist_img:hover {
+    border: 1px #ededed solid;
+}
 .prolist_info {
     float: right;
     width: 95px;
@@ -896,13 +930,7 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
         background: #6c6c6c;
         color: #fff;
         position: relative;
-        .fixed {
-            position: fixed;
-            top: 0;
-            left: 50%;
-            margin-left: -220px;
-            z-index: 10;
-        }
+        
         ul {
             float: left;
             padding-left: 37px;
@@ -919,7 +947,15 @@ li.header_navcurrent a, .header_mc_menu .mainnav:hover {
             }
         }
     }
+    .fixed {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            margin-left: -220px;
+            z-index: 10;
+        }
 }
+
 .detail_buyinfo {
     float: right;
     width: 225px;
@@ -1308,7 +1344,7 @@ strong, b {
         display: inline-block;
     }
 }
-
+.footer .w960 dl{width:110px;margin-left:10px;}
 /* 右侧菜单栏 */
 .sidebar {
     width: 35px;
@@ -1338,6 +1374,38 @@ strong, b {
 }
 .sidebar_item {
     position: relative;
+    .sidebar_tooltip {
+        width: 103px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: #6c6c6c;
+        color: #fff;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        display: block;
+        a{
+            color:#fff;
+        }
+        span{
+            margin: 0 10px;
+        }
+        .triangle {
+            position: absolute;
+            right: -8px;
+            top: 14px;
+            width: 0;
+            height: 0;
+            border-width: 4px;
+            border-style: dashed dashed dashed solid;
+            border-color: transparent transparent transparent #6c6c6c;
+        }
+    }
+    .wechat{
+        display: none;
+    }
 }
 .sidebar_login {
     margin-bottom: 21px;
@@ -1355,34 +1423,15 @@ strong, b {
 .sidebar_login .sitem_btnbg {
     background-position: 0 0;
 }
-.sidebar_tooltip {
-    width: 103px;
-    height: 35px;
-    line-height: 35px;
-    background: #6c6c6c;
-    text-align: center;
-    color: #fff;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0px;
+
+.sidebar_item:hover{
+    background:#00c8ff;
+}
+.sidebar_item:hover .wechat{
+    right:10px;
+    z-index: 30;
+    opacity: 1;
     display: block;
-    a{
-        color:#fff;
-    }
-    span{
-        margin: 0 10px;
-    }
-    .triangle {
-        position: absolute;
-        right: -8px;
-        top: 14px;
-        width: 0;
-        height: 0;
-        border-width: 4px;
-        border-style: dashed dashed dashed solid;
-        border-color: transparent transparent transparent #6c6c6c;
-    }
 }
 .sidebar_shopcar {
     height: 126px;

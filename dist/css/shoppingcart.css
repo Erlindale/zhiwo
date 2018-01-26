@@ -125,9 +125,6 @@ s, strike, del {
     .item_personal_subnav ul li a {
       padding-left: 12px; }
 
-.item_btn:hover .item_personal_subnav {
-  display: block; }
-
 .header_top_right .item_personal:hover {
   background: #fff; }
 
@@ -245,6 +242,121 @@ s, strike, del {
   width: 960px;
   margin: 0 auto;
   padding-top: 20px; }
+
+.cb_title_h2 h2 {
+  font-size: 18px;
+  color: #000;
+  font-family: 'å¾®è½¯é›…é»‘';
+  font-weight: normal;
+  overflow: hidden; }
+  .cb_title_h2 h2 span {
+    margin-right: 12px; }
+  .cb_title_h2 h2 i {
+    font-style: normal;
+    font-family: Arial;
+    text-transform: uppercase; }
+
+.mycart h2 {
+  overflow: hidden; }
+
+.mycart_htitle {
+  float: left; }
+
+.mycart_htip {
+  float: right;
+  font-size: 12px;
+  font-weight: normal;
+  color: #6c6c6c;
+  height: 22px;
+  line-height: 22px; }
+  .mycart_htip em {
+    color: #ff643c;
+    font-style: normal;
+    font-weight: bold; }
+
+.mycart_list_box {
+  margin-top: 16px;
+  background: #fff; }
+
+.mycart_list_goods {
+  width: 960px; }
+
+.table_nav {
+  width: 900px;
+  padding: 0 30px;
+  height: 40px;
+  background: #6c6c6c; }
+  .table_nav li {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    color: #fff;
+    text-align: center; }
+  .table_nav .table_nav_name {
+    width: 500px;
+    text-align: left; }
+
+.table_nav_price {
+  width: 96px; }
+
+.table_nav_amount {
+  width: 90px; }
+
+.table_nav_allpay {
+  width: 80px; }
+
+.table_nav_integral {
+  width: 70px; }
+
+.table_nav_operate {
+  width: 64px; }
+
+.table_cont {
+  background: #fff;
+  padding: 10px 0 0; }
+
+.table_item {
+  width: 100%; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey; }
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit; }
+
+.table_item tr {
+  border-bottom: 1px #e3e3e3 dotted;
+  position: relative; }
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit; }
+
+.table_item td {
+  text-align: center; }
+
+.table_item_name {
+  width: 500px;
+  padding: 20px 0 20px 30px;
+  position: relative; }
+
+.selpro_img {
+  width: 68px;
+  height: 68px;
+  border: 1px #eee solid;
+  margin-left: 15px;
+  float: left;
+  position: relative; }
 
 .shopcar_empty {
   width: 960px;
@@ -370,6 +482,10 @@ s, strike, del {
 
 .fcb_mail {
   background: url(http://www.zhiwo.com/static/images/ico/assure2.png) no-repeat 0 -105px; }
+
+.footer .w960 dl {
+  width: 110px;
+  margin-left: 10px; }
 
 .footer_copyright {
   margin: 0 auto;

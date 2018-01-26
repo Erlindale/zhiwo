@@ -5,7 +5,8 @@ requirejs.config( {
 		"cookie" : "../scripts/common/jquery.cookie",
 		"input":"../scripts/register/input",
 		"reg":"../scripts/register/reg",
-		"links":"../scripts/register/links"
+		"links":"../scripts/register/links",
+		"topnav":"../scripts/register/header_topnav"
 		
 	}
 } );

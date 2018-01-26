@@ -5,34 +5,35 @@ define(["jquery"],function($){
 	}
 	Fixedbar.prototype = {
 		constructor:Fixedbar,
-		init:function(obj, json,speed,fnEnd){
+		init:function(){
 			this.$sidebaritem = $(".sidebar_item")
-			// console.log(this.$sidebaritem);
-			// this.$toolTip = this.$sidebarItem.find('.sidebar_tooltip');
-			// this.$toolTipLogin = this.$sidebarItem.find('.sidebar_tooltip_login');
-			this.$index = 0;
+			this.$sidebar_top = $("#sidebar_top")
+			// console.log(this.$sidebar_top)
 			this.$sidebaritem.mouseover($.proxy(this.itemshow))
 			this.$sidebaritem.mouseout($.proxy(this.itemout))
-
+			this.$sidebar_top.on("click",$.proxy(this.s_top))
 		},
 		itemshow:function(){
-			this.$toolTip = $(this).find('.sidebar_tooltip');
-			// console.log(this.$toolTip.hasClass("sidebar_wechat"))
-			if(this.$toolTip.hasClass("wechat") ){
-				this.$toolTip.fadeIn("normal").css({
-					"right":10,
-					"opacity":1
-				})
-			}else{
-				this.$toolTip.stop().fadeIn("normal").css({
+			this.$toolTip = $(this).find('.n_wechat');
+			this.$toolTip.stop().fadeIn("normal").css({
 					"left":-103,
-					"opacity": 1 
+					"opacity":1,
+					"display":"block"
 				})
-			}		
+					
 		}, 
 		itemout:function(){
-			this.$toolTip = $(this).find('.sidebar_tooltip');		
+			this.$toolTip = $(this).find('.n_wechat');		
 			this.$toolTip.stop().fadeOut()
+		},
+		s_top:function(){
+			if ($('html').scrollTop()) {
+                $('html').animate({ scrollTop: 0 }, 1000);
+                return ;
+            }
+            $('body').animate({ scrollTop: 0 }, 1000);
+                 return ;            
+                 
 		}
 	}
 	return new Fixedbar();
