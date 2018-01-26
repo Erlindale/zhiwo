@@ -14,14 +14,14 @@ define( [ "jquery" ],function(){
 			this.clogo.on("click",$.proxy(this.to_index,this));
 		};
 		to_reg(){
-			self.location.href = "html/register.html";
+			self.location.href = "register.html";
 		};
 		to_register(){
-			this.reg.attr( "href", "html/register.html" );
+			this.reg.attr( "href", "register.html" );
 		};
 
 		to_login(){
-			self.location.href = "html/login.html";
+			self.location.href = "login.html";
 		};
 		to_index(){
 			self.location.href = "../index.html"

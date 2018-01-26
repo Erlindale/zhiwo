@@ -15,14 +15,14 @@ define( [ "jquery" ],function(){
 		};
 		
 		to_log(){
-			this.sign.attr( "href", "html/login.html" );
+			this.sign.attr( "href", "login.html" );
 		};
 		to_register(){
-			self.location.href = "html/register.html";
+			self.location.href = "register.html";
 		};
 
 		to_login(){
-			self.location.href = "html/login.html";
+			self.location.href = "login.html";
 		};
 		to_index(){
 			self.location.href = "../index.html"
