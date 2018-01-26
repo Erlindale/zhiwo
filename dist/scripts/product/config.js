@@ -8,6 +8,7 @@ requirejs.config( {
 		"sponsor":"../scripts/product/sponsor",
 		"fixedbar":"../scripts/product/fixedbar",
 		"search":"../scripts/product/search",
-		"links":"../scripts/product/links"
+		"links":"../scripts/product/links",
+		"add_cart":"../scripts/product/add_cart"
 	}
 } );

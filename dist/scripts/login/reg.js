@@ -73,10 +73,6 @@ define(["jquery","cookie"],function(){
 				 $.cookie("user",'[{"user":"'+user+'"}]',{expires:7,path:'/'} );
 				 window.location.href = "http://localhost:8888/index.html";
 			}
-			
-			 // $.cookie("pass",'[{"user"}]')
-			 // console.log(JSON.parse($.cookie("user")))
-			
 		}
 	}
 	return new Reg();

@@ -12,7 +12,6 @@ define(["jquery"],function($){
 
 		},
 		appear:function(){
-			console.log($(this).find(".item_personal_subnav"))
 			$(this).find(".item_personal_subnav").stop().slideDown(400);
 		},
 		disappear:function(){

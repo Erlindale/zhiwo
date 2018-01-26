@@ -1,6 +1,6 @@
 /*商品详情逻辑控制页面*/
 require(["../scripts/product/config.js"],function(){
-	require(["jquery","cookie","pro","topnav","sponsor","fixedbar","search","links"],function($,cookie,pro,topnav,sponsor,fixedbar,search,links){
+	require(["jquery","cookie","pro","topnav","sponsor","fixedbar","search","links","add_cart"],function($,cookie,pro,topnav,sponsor,fixedbar,search,links,add_cart){
 		
 		pro.init();
 		// 下拉二级菜单  t
@@ -19,6 +19,8 @@ require(["../scripts/product/config.js"],function(){
 
 		//链接
 		links.init();
+
+		console.log(add_cart)
 	})
 })
    

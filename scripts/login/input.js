@@ -25,7 +25,7 @@ define(["jquery"],function($){
 		tick:function(){
 		
 			this.$clickNum++;
-			console.log(this.$clickNum)
+			// console.log(this.$clickNum)
 			if(this.$clickNum % 2 == 0){
 				this.$auto_btn.find("label").removeClass('u_checked');
 			}else{
